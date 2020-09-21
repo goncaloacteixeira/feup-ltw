@@ -1,4 +1,4 @@
-# LTW - Linguaguens e Tecnologias Web - 1º Semestre | 3º Ano
+# Linguaguens e Tecnologias Web - 1º Semestre | 3º Ano
 
 ## Links Úteis
 
