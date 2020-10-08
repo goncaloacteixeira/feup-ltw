@@ -1,0 +1,66 @@
+#comments {
+    padding: 0 1em 1em 1em;
+}
+
+.user {
+    font-style: italic;
+    font-family: Verdana, sans-serif;
+}
+
+.user::after {
+    content: " said:";
+    font-style: normal;
+}
+
+.date {
+    float: right;
+    font-family: Verdana, sans-serif;
+}
+
+article.comment p {
+    background-color: #EDEFF0;
+    padding: 1em;
+}
+
+article.comment p::before {
+    content: "\201C";
+    color: #CCCCCC;
+    font-size: 400%;
+    vertical-align: bottom;
+    line-height: 0em;
+}
+
+#comments form {
+    font-family: Verdana, sans-serif;
+    ;
+    background-color: #EDEFF0;
+}
+
+#comments form h2 {
+    font-size: 12pt;
+}
+
+#comments form label > input[name=username],
+#comments form label > input[name=email] {
+    background-color: #EDEFF0;
+}
+
+#comments form label > textarea[name=comment] {
+    width: 100%;
+    height: 7em;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    font-size: 10pt;
+    margin: 1em 0;
+    border: 0;
+}
+
+#comments form label > textarea[name=comment] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
