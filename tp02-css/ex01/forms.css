@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-form {
+#login form, #register form {
     background-color: white;
     color: black;
     margin: 2em auto;
@@ -11,16 +11,15 @@ form {
     padding: 1em;
 }
 
-label {
+#login label, #register label {
     padding: 1em;
 }
 
-label,
-input {
+#login label, #login input, #register label, #register input {
     display: block;
 }
 
-input {
+#login input, #register input {
     border: none;
     background-color: white;
     color: black;
@@ -30,7 +29,7 @@ input {
     font-size: 0.9em;
 }
 
-input[type=submit] {
+#login input[type=submit], #register input[type=submit] {
     width: auto;
 
     background-color: black;
@@ -42,13 +41,12 @@ input[type=submit] {
     margin-left: auto;
 }
 
-input:focus {
+#login input:focus, #register input:focus {
     outline: none;
     border-bottom: 1px solid #046dd5;
 }
 
 @media (max-width: 30em) {
-
     #register,
     #login {
         background-color: white;
