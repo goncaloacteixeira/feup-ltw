@@ -14,4 +14,13 @@
     return $articles;
   }
 
+  function getArticle(int $id){
+    global $db;
+    $stmt = $db->prepare('SELECT * FROM news JOIN users USING (username) WHERE id = :id');
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $article = $stmt->fetch();
+    return $article;
+}
+
 ?>

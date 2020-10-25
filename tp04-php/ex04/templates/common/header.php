@@ -1,8 +1,21 @@
 <?php
 echo '
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Super Legit News</title>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/layout.css" rel="stylesheet">
+    <link href="./style/responsive.css" rel="stylesheet">
+    <link href="./style/comments.css" rel="stylesheet">
+    <link href="./style/forms.css" rel="stylesheet">
+  </head>
+  <body>
   <header>
-    <h1><a href="index.html">Super Legit News</a></h1>
-    <h2><a href="index.html">Where fake news are born!</a></h2>
+    <h1><a href="list_news.php">Super Legit News</a></h1>
+    <h2><a href="list_news.php">Where fake news are born!</a></h2>
     <div id="signup">
       <a href="register.html">Register</a>
       <a href="login.html">Login</a>
@@ -14,12 +27,12 @@ echo '
     <label class="hamburger" for="hamburger"></label>
 
     <ul>
-      <li><a href="index.html">Local</a></li>
-      <li><a href="index.html">World</a></li>
-      <li><a href="index.html">Politics</a></li>
-      <li><a href="index.html">Sports</a></li>
-      <li><a href="index.html">Science</a></li>
-      <li><a href="index.html">Weather</a></li>
+      <li><a href="list_news.php">Local</a></li>
+      <li><a href="list_news.php">World</a></li>
+      <li><a href="list_news.php">Politics</a></li>
+      <li><a href="list_news.php">Sports</a></li>
+      <li><a href="list_news.php">Science</a></li>
+      <li><a href="list_news.php">Weather</a></li>
     </ul>
   </nav>
   <aside id="related">
