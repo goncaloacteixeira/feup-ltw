@@ -7,6 +7,8 @@
   $stmt->execute();
   $article = $stmt->fetch();
 
+  echo '<section id="news"><article>';
+
   echo '<header><h1><a href="item.html?id= ' . $article['id'] . '">' . $article['title'] . '</a></h1></header>';
   echo '<img src="https://www.bookdesignmadesimple.com/wp-content/uploads/2015/08/iStock_3357562_600x300.jpg" alt="">';
   echo '<p>' . $article['introduction'] . '</p>';
@@ -25,5 +27,5 @@
     echo '</article>';
   }
 
-  echo '</section>';
+  echo '</section><article></section>';
 ?>
