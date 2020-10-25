@@ -1,0 +1,54 @@
+#register h1,
+#login h1 {
+    text-align: center;
+}
+
+#login form, #register form {
+    background-color: white;
+    color: black;
+    margin: 2em auto;
+    width: 20em;
+    padding: 1em;
+}
+
+#login label, #register label {
+    padding: 1em;
+}
+
+#login label, #login input, #register label, #register input {
+    display: block;
+}
+
+#login input, #register input {
+    border: none;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+    margin-top: 1em;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+#login input[type=submit], #register input[type=submit] {
+    width: auto;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+    margin: 1em;
+    padding: 1em;
+    margin-left: auto;
+}
+
+#login input:focus, #register input:focus {
+    outline: none;
+    border-bottom: 1px solid #046dd5;
+}
+
+@media (max-width: 30em) {
+    #register,
+    #login {
+        background-color: white;
+    }
+}
