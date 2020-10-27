@@ -6,7 +6,7 @@
   $article = getArticle($_GET['id']);
   $comments = getAllComments($_GET['id']);
 
-  include('./templates/common/header.php');
-  include('./templates/news/news_item.php');
-  include('./templates/common/footer.php');
+  include('templates/common/header.php');
+  include('templates/news/news_item.php');
+  include('templates/common/footer.php');
 ?>

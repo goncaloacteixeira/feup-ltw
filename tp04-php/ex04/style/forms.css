@@ -3,23 +3,23 @@
     text-align: center;
 }
 
-#login form, #register form {
+#login form, #register form, #edit-news form {
     background-color: white;
     color: black;
     margin: 2em auto;
-    width: 20em;
+    width: 70%;
     padding: 1em;
 }
 
-#login label, #register label {
+#login label, #register label, #edit-news label {
     padding: 1em;
 }
 
-#login label, #login input, #register label, #register input {
+#login label, #login input, #register label, #register input, #edit-news input, #edit-news label {
     display: block;
 }
 
-#login input, #register input {
+#login input, #register input, #edit-news input {
     border: none;
     background-color: white;
     color: black;
@@ -29,7 +29,7 @@
     font-size: 0.9em;
 }
 
-#login input[type=submit], #register input[type=submit] {
+#login input[type=submit], #register input[type=submit], #edit-news input[type=submit] {
     width: auto;
 
     background-color: black;
@@ -41,14 +41,24 @@
     margin-left: auto;
 }
 
-#login input:focus, #register input:focus {
+#login input:focus, #register input:focus, #edit-news input:focus {
     outline: none;
     border-bottom: 1px solid #046dd5;
 }
 
 @media (max-width: 30em) {
     #register,
-    #login {
+    #login,
+    #edit-news {
         background-color: white;
     }
+}
+
+#edit-news textarea {
+    width: 100%;
+    height: 20em;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: none;
+    outline: none;
 }
