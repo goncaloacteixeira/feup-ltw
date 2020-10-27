@@ -1,4 +1,9 @@
-<?php 
+<?php
+  session_start();
+
+  if (!isset($_SESSION['username']))
+    header('Location: list_news.php');
+
   include_once('database/connection.php');
   include_once('database/news.php');
 

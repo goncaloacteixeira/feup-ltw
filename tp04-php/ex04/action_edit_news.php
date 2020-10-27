@@ -1,4 +1,9 @@
 <?php
+  session_start();
+
+  if (!isset($_SESSION['username']))
+    header('Location: list_news.php');
+
   $id = $_GET['id'];
   $title = $_GET['title'];
   $introduction = $_GET['introduction'];

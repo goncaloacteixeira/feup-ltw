@@ -17,5 +17,9 @@
     echo '</article>';
   }
 ?>
+  <?php
+  if (isset($_SESSION['username'])) {
+    echo '<a href="edit_news.php?id=' . $article['id'] . '">Edit Article</a>';
+  } ?>
 
 <?= '</section><article></section>' ?>
