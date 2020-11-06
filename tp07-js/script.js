@@ -3,10 +3,6 @@ form.addEventListener('submit', function() {
     alert('Submitted!')
     event.preventDefault()
 
-    addNewElement()
-})
-
-function addNewElement() {
     let inputs = document.getElementsByTagName('form')[0].elements;
     let desc = inputs.description.value
     let quant = inputs.quantity.value
@@ -22,4 +18,10 @@ function addNewElement() {
     x.innerHTML = `<input value="${quant}">`
     x = row.insertCell(2)
     x.innerHTML = `<input type="button" value="Remove">`
-}
+
+    x.addEventListener('click', function () {
+        alert('Removed!')
+        table.deleteRow(row.rowIndex)
+    })
+})
+
