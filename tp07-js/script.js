@@ -1,10 +1,5 @@
-
-let output = document.getElementsByTagName("form")
-console.log(output[0].outerHTML)
-
-output = document.querySelector('form input[name="quantity"]')
-console.log(output.outerHTML)
-
-output = document.querySelectorAll('form input')
-console.log(output)
-
+let form = document.getElementsByTagName('form')[0]
+form.addEventListener('submit', function() {
+    alert('Submitted!')
+    event.preventDefault()
+})
